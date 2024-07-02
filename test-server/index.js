@@ -2,7 +2,7 @@ const axios = require('axios');
 
 const testServerBaseUrl = 'http://20.244.56.144/test';
 
-// Function to fetch numbers from the test server based on type
+
 async function fetchNumbers(type) {
     try {
         const response = await axios.get(`${testServerBaseUrl}/${type}`);
@@ -13,7 +13,7 @@ async function fetchNumbers(type) {
     }
 }
 
-// Function to handle fetching numbers based on specified types
+
 async function fetchNumbersByTypes(types) {
     const results = {};
 
@@ -24,7 +24,7 @@ async function fetchNumbersByTypes(types) {
     return results;
 }
 
-// Example usage: Fetch numbers for specified types
+
 async function main() {
     const typesToFetch = ['primes', 'fibo', 'even', 'random'];
 
@@ -36,5 +36,5 @@ async function main() {
     }
 }
 
-// Execute main function
+
 main();
